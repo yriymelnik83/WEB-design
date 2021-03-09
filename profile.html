@@ -1,0 +1,216 @@
+<DOCTYPE html>
+
+<html>
+	<head>
+		 <!-- Кодировка веб-страницы -->
+  	<meta charset="utf-8">
+  	<!-- Настройка viewport -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 	 <!-- jQuery с CDN -->
+  	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  	<!-- Bootstrap Bundle JS с CDN -->
+  	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg==" crossorigin="anonymous"></script>
+
+  	<!-- Bootstrap CSS с CDN-->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous">
+
+    <link rel = "stylesheet" href = "assets/main.css">
+    <style>
+   body {
+    background: #F0F0F0 url(assets/photo/3.jpg); /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+   }
+  </style>
+		<title> 
+			Calculator
+		</title>
+	</head>
+
+	
+	<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Калькулятор</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Про додаток<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Профіль</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="Calculator.html" >Калькулятор</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalButton">Вхід</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalRegistration">Реєстрація</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="ModalButton" tabindex="-1" role="dialog" aria-labelledby="ModalButton" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Авторізація</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-group">
+                  <label for="InputEmail">Email адреса</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Введіть email">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword">Пароль</label>
+                  <input type="password" class="form-control" id="InputPassword1" placeholder="Введіть пароль">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="CheckEnter">
+                  <label class="form-check-label" for="CheckEnter">Запам'ятати мене</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Увійти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ModalRegistration" tabindex="-1" role="dialog" aria-labelledby="ModalRegistration" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabelReg">Реєстрація</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-group">
+                  <label for="InputName">Iм'я</label>
+                  <input type="name" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Введіть ім'я">
+                </div>
+                <div class="form-group">
+                  <label for="InputSurname">Прізвище</label>
+                  <input type="surname" class="form-control" id="InputSurname" aria-describedby="surnameHelp" placeholder="Введіть прізвище">
+                </div>
+                <div class="form-group">
+                  <label for="inputDate">Дата народження</label>
+                  <input type="date" class="form-control" id="InputDate" aria-describedby="dateHelp">
+                </div>
+                <div>
+                <label for="inputSex">Стать</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Radios" id="manRadios" value="option1" checked>
+                  <label class="form-check-label" for="manRadios">
+                  Чоловіча
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Radios" id="womanRadios" value="option2">
+                  <label class="form-check-label" for="womanRadios">
+                    Жіноча
+                  </label>
+                  </div>
+                <div class="form-group">
+                  <label for="InputEmail">Email</label>
+                  <input type="email" class="form-control" id="InputEmail" placeholder="Введіть email">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword1">Пароль</label>
+                  <input type="password" class="form-control" id="InputPassword1" placeholder="Введіть пароль">
+                  <small id="passwordHelpBlock" class="form-text text-muted">
+                  Пароль має містити не менше 8 символів.
+                  </small>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Увійти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <div class="main-body">
+        
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="assets/photo/avatar.jpg" class="rounded-circle" width="100">
+                    <div class="mt-3">
+                      <h4>Мельник Юрій</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Им'я</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Юрій
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                  	<div class="col-sm-3">
+                      <h6 class="mb-0">Прізвище</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Мельник
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      melnikyriy23@gmail.com
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Дата народження</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      29.05.2001
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </body>
