@@ -6,4 +6,4 @@
 
 Посилання на документ звіту: https://docs.google.com/document/d/1Y_-fvPAumaXC7r37A5IQS0kIvyKHHR5N66kmO8PYavU/edit
 
-
+Github Pages: https://yriymelnik83.github.io/WEB-design/
