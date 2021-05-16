@@ -6,6 +6,6 @@
 
 Посилання на документ звіту лабораторної роботи №1: https://docs.google.com/document/d/1Y_-fvPAumaXC7r37A5IQS0kIvyKHHR5N66kmO8PYavU/edit
 
-Посилання на документ звіту лабораторної роботи №2: https://docs.google.com/document/d/1Ert8DES28QzzBUGaGyxrzsm3z6DsW3bKtmQSImEnLXQ/edit
+Посилання на документ звіту лабораторної роботи №2: https://docs.google.com/document/d/1bHs4sSOHVQ-vQxda2wYIQi6hzc_0gkpHOEOglC7p9-s/edit?usp=sharing
 
 Github Pages: https://yriymelnik83.github.io/WEB-design/
